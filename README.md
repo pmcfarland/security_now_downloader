@@ -12,15 +12,15 @@ I claim no rights to Security Now, Twit or anything remotely related to them.
 
 This script is merely for those who wish to catch up on the ever growing archive of episodes. There is also something to be said for having your own offline copy of things that are important to you.
 
-Directions:
-1) Download the sn_downloader.bat file
-2) Right click and edit the file in your notepad of choice
-3) Find the latest episode number from Steve's site: [https://www.grc.com/securitynow.htm]
-4) The downloader will start at episode 1 and go to episode 593, the latest as I'm uploading the file
-    -To update this for the future, change this line: for /L %%n IN (1,1,593)
-    -That says start at episode 1, increment by 1 each time and end at episode 593
-5) By default, the files download into a folder called C:\sn, if you wish to change that edit the end of each of the 3 download lines
-    -So c:\sn\sn-%NBR%.mp3 could be C:\some\other\folder\sn-%NBR%.mp3
+Directions:  
+1) Download the sn_downloader.bat file  
+2) Right click and edit the file in your notepad of choice  
+3) Find the latest episode number from Steve's site: [https://www.grc.com/securitynow.htm]  
+4) The downloader will start at episode 1 and go to episode 593, the latest as I'm uploading the file  
+    -To update this for the future, change this line: for /L %%n IN (1,1,593)  
+    -That says start at episode 1, increment by 1 each time and end at episode 593  
+5) By default, the files download into a folder called C:\sn, if you wish to change that edit the end of each of the 3 download lines  
+    -So c:\sn\sn-%NBR%.mp3 could be C:\some\other\folder\sn-%NBR%.mp3  
     
 NOTE: This is downloading a large ammount of data, nearly 600 mp3 files, 600 text files and 600 pdf files. It WILL take a long time.
       I only downloaded the mp3's and txt files and my archive is over 24 GB as of December 2016.
