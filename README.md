@@ -21,6 +21,8 @@ Directions:
     -That says start at episode 1, increment by 1 each time and end at episode 593  
 5) By default, the files download into a folder called C:\sn, if you wish to change that edit the end of each of the 3 download lines  
     -So c:\sn\sn-%NBR%.mp3 could be C:\some\other\folder\sn-%NBR%.mp3  
+    -Whichever directory you choose MUST exist prior to running the script, so by defult create C:\sn unless you point it somewhere else  
+6) Run the script and walk away  
     
 NOTE: This is downloading a large ammount of data, nearly 600 mp3 files, 600 text files and 600 pdf files. It WILL take a long time.
       I only downloaded the mp3's and txt files and my archive is over 24 GB as of December 2016.
