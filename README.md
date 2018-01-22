@@ -12,17 +12,22 @@ I claim no rights to Security Now, Twit or anything remotely related to them.
 
 This script is merely for those who wish to catch up on the ever growing archive of episodes. There is also something to be said for having your own offline copy of things that are important to you.
 
-Directions:  
-1) Download the sn_downloader.bat file  
-2) Right click and edit the file in your notepad of choice  
-3) Find the latest episode number from Steve's site: [https://www.grc.com/securitynow.htm]  
-4) The downloader will start at episode 1 and go to episode 593, the latest as I'm uploading the file  
-    -To update this for the future, change this line: for /L %%n IN (1,1,593)  
-    -That says start at episode 1, increment by 1 each time and end at episode 593  
-5) By default, the files download into a folder called C:\sn, if you wish to change that edit the end of each of the 3 download lines  
-    -So c:\sn\sn-%NBR%.mp3 could be C:\some\other\folder\sn-%NBR%.mp3  
-    -Whichever directory you choose MUST exist prior to running the script, so by defult create C:\sn unless you point it somewhere else  
-6) Run the script and walk away  
-    
-NOTE: This is downloading a large ammount of data, nearly 600 mp3 files, 600 text files and 600 pdf files. It WILL take a long time.
-      I only downloaded the mp3's and txt files and my archive is over 24 GB as of December 2016.
+Directions:
+============================================================================
+1) Download the sn_downloader_powershell.ps1 file.
+
+2) Right click on sn_download_powershell.ps1 and select Run with PowerShell.
+    ![Run With PowerShell](https://github.com/pmcfarland/security_now_downloader/blob/master/sn_downloader_run_with.PNG)
+
+3) If you get a security warning that the script can not be executed you need to change you Execution Policy. That can be done by using the following command: 'set-executionpolicy remotesigned'
+    ![Change Execution Policy](https://github.com/pmcfarland/security_now_downloader/blob/master/PS1.png)
+
+4) The script will first check if the directory C:\SN exists. If it doesn't then the script will create it.
+
+5) Then the script fetchs Steve's Security Now website, parses it to extract the current episode number and then and starts downloading from episode 1 - whatver the current episode is. As of this edit it's in the mid 600's so this WILL take some time.
+
+6) Sit back and wait.
+
+NOTE:
+=============================================================================
+As of my edit, 01/22/2018 the latest episode is 646. that means there are 646 mp3 files at roughly 60 MB, 646 txt files at roughly 100 kb and 646 pdf files at roughly 160 kb. All total you're looking at approximately 27 GB of storage required.
