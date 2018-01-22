@@ -1,5 +1,7 @@
 # security_now_downloader
+===========================================================================
 This script downloads audio files and extras for the podcast Security Now.
+    ![Example of script running](https://github.com/pmcfarland/security_now_downloader/blob/master/sn_downloader_example.PNG)
 
 From Wikipedia: [https://en.wikipedia.org/wiki/Security_Now]
 "Security Now! is a weekly podcast hosted by Steve Gibson and Leo Laporte. It was the second show to premiere on the TWiT Network, launching in summer 2005. The first episode, “As the Worm Turns”, was released on August 19, 2005.[3]
