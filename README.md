@@ -2,7 +2,7 @@
 ===========================================================================
 
 This script downloads audio files and extras for the podcast Security Now.
-![Example of script running](https://github.com/pmcfarland/security_now_downloader/blob/master/sn_downloader_example.PNG)
+    ![Example of script running](https://github.com/pmcfarland/security_now_downloader/blob/master/sn_downloader_example.PNG)
 
 From Wikipedia: [https://en.wikipedia.org/wiki/Security_Now]
 "Security Now! is a weekly podcast hosted by Steve Gibson and Leo Laporte. It was the second show to premiere on the TWiT Network, launching in summer 2005. The first episode, “As the Worm Turns”, was released on August 19, 2005.[3]
@@ -20,9 +20,10 @@ Directions:
 1) Download the sn_downloader_powershell.ps1 file.
 
 2) Right click on sn_download_powershell.ps1 and select Run with PowerShell.
+
     ![Run With PowerShell](https://github.com/pmcfarland/security_now_downloader/blob/master/sn_downloader_run_with.PNG)
 
-3) If you get a security warning that the script can not be executed you need to change you Execution Policy. That can be done by using the following command: 'set-executionpolicy remotesigned'
+3) If you get a security warning that the script can not be executed you need to change you Execution Policy. That can be done by using the following command: `set-executionpolicy remotesigned`
     ![Change Execution Policy](https://github.com/pmcfarland/security_now_downloader/blob/master/PS1.png)
 
 4) The script will first check if the directory C:\SN exists. If it doesn't then the script will create it.
