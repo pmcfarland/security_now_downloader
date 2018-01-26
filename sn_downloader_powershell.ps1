@@ -1,5 +1,5 @@
 # @ Author: pmcfarland
-# @ Date: 01.22.2018
+# @ Date: 01.26.2018
 
 # This script downloads the podcast Security Now as well as text transcript and pdf show notes
 # Security Now is hosted here: https://www.grc.com/securitynow.htm
@@ -14,8 +14,12 @@ if(!(Test-Path -Path C:\SN )){
 
 
 # This part downloads a text copy of the securitynow website so it can extract the latest episode number
-# curl --insecure https://www.grc.com/securitynow.htm > sn.txt
-$x = Select-String -Path .\sn.txt -Pattern "<!-- ################################################################################ -->" -Context 0,2 | % {$_.Context.PostContext}
+$fromfile = "https://www.grc.com/securitynow.htm"
+$tofile = "C:\SN\securitynow.txt"
+$webclient = New-Object System.Net.WebClient
+$webclient.DownloadFile($fromfile, $tofile)
+# Now it searches the file for the most recent episode number
+$x = Select-String -Path $tofile -Pattern "<!-- ################################################################################ -->" -Context 0,2 | % {$_.Context.PostContext}
 $y= $x -match '\"'
 $latest= $y.substring(9,3)
 
