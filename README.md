@@ -34,4 +34,4 @@ Directions:
 
 NOTE:
 =============================================================================
-As of my edit, 01/22/2018 the latest episode is 646. that means there are 646 mp3 files at roughly 60 MB, 646 txt files at roughly 100 kb and 646 pdf files at roughly 160 kb. All total you're looking at approximately 27 GB of storage required.
+As of my latest test, 08/17/2020 the latest episode is 779. that means there are 779 mp3 files at roughly 60 MB, 779 txt files at roughly 100 kb and 779 pdf files at roughly 160 kb. All total you're looking at approximately 35 GB of storage required.
