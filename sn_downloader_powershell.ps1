@@ -27,7 +27,7 @@ $latest= $z.split()[-1]
 Import-Module BitsTransfer;
 
 #This is the main download loop
-For ($i=1; $i -lt $latest; $i++){
+For ($i=1; $i -le $latest; $i++){
 
 	$NBR = $i.ToString("D3")
 	$mediaurl = "http://media.grc.com/sn/sn-"+$NBR+".mp3"
