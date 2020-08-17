@@ -1,5 +1,5 @@
 # @ Author: pmcfarland
-# @ Date: 01.26.2018
+# @ Date: 08.16.2020
 
 # This script downloads the podcast Security Now as well as text transcript and pdf show notes
 # Security Now is hosted here: https://www.grc.com/securitynow.htm
@@ -19,9 +19,10 @@ $tofile = "C:\SN\securitynow.txt"
 $webclient = New-Object System.Net.WebClient
 $webclient.DownloadFile($fromfile, $tofile)
 # Now it searches the file for the most recent episode number
-$x = Select-String -Path $tofile -Pattern "<!-- ################################################################################ -->" -Context 0,2 | % {$_.Context.PostContext}
+$x = Select-String -Path $tofile -Pattern "<!-- ################################################################################ -->" -Context 0,4 | % {$_.Context.PostContext}
 $y= $x -match '\"'
-$latest= $y.substring(9,3)
+$z= $y.substring(9,3)
+$latest= $z.split()[-1]
 
 Import-Module BitsTransfer;
 
