@@ -28,10 +28,10 @@ Directions:
 
 4) The script will first check if the directory C:\SN exists. If it doesn't then the script will create it.
 
-5) Then the script fetchs Steve's Security Now website, parses it to extract the current episode number and then and starts downloading from episode 1 - whatver the current episode is. As of this edit it's in the mid 600's so this WILL take some time.
+5) Then the script fetchs Steve's Security Now website, parses it to extract the current episode number and then and starts downloading from episode 1 - whatver the current episode is. As of this edit it's in the mid 800's so this WILL take some time.
 
 6) Sit back and wait.
 
 NOTE:
 =============================================================================
-As of my latest test, 08/17/2020 the latest episode is 779. that means there are 779 mp3 files at roughly 60 MB, 779 txt files at roughly 100 kb and 779 pdf files at roughly 160 kb. All total you're looking at approximately 35 GB of storage required.
+As of my latest test, 09/21/2021 the latest episode is # 836. that means there are 836 mp3 files at roughly 60 MB each, 836 txt files at roughly 100 kb each and 836 pdf files at roughly 160 kb each. All total you're looking at approximately 38 GB of storage required.
